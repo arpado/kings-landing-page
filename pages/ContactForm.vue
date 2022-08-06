@@ -42,7 +42,7 @@
 </template>
 
 <script>
-export default {};
+export default {}
 </script>
 
 <style scoped>
@@ -72,10 +72,6 @@ h2 {
   height: 80vh;
   width: 80vw;
   padding: 1vw;
-  /*display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: flex-start;*/
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(12, 1fr);
@@ -109,12 +105,6 @@ p {
   max-height: 350px;
   max-width: 350px;
 }
-/*.map > img {
-  width: 100%;
-  height: 100%;
-  object-fit: scale-down;
-  border: 0.5vw solid var(--main-bronze);
-}*/
 .form-wrapper {
   grid-row: 2/10;
   display: flex;
@@ -146,7 +136,7 @@ button {
   height: 50px;
   background-color: var(--main-black);
   color: var(--main-white);
-  font-family: "Cormorant Upright", serif;
+  font-family: 'Cormorant Upright', serif;
   font-weight: bold;
   font-size: 1.2rem;
   cursor: pointer;

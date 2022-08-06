@@ -59,21 +59,13 @@ export default {
   gap: 2vw;
   justify-content: flex-start;
   align-items: center;
-  /*display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(auto, 1f);*/
 }
-/*.points-of-interest > :first-child {
-  margin-top: 12.5vw;
-}*/
 .section-title {
   width: 40vw;
   height: 12.5vw;
   display: flex;
   justify-content: center;
   align-items: center;
-  /*grid-row: 1/2;
-  grid-column: 2/3;*/
   color: var(--main-white);
 }
 @media screen and (min-width: 700px) {

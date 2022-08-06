@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <HeaderElement :inner-width="innerWidth" @scroll-request="scrollTo"/>
+    <HeaderElement @scroll-request="scrollTo"/>
     <HeroSection id="hero-section" @booking-request="bookingRequest"/>
     <TestimonialSection id="testimonials" />
     <AboutUs  id="about-us" />
@@ -29,68 +29,19 @@ export default {
     PointsOfInterest,
     ContactForm,
   },
-  data() {
-    return {
-      innerWidth: null,
-      // sectionId: String,
-    }
-  },
-  mounted() {
-    window.addEventListener('resize', this.setInnerWidth)
-    this.setInnerWidth()
-    // this.logWindow();
-  },
-  unmounted() {
-    window.removeEventListener('resize', this.setInnerWidth)
-  },
   methods: {
-    // logWindow() {
-    //   console.log(window.innerWidth);
-    // },
-    setInnerWidth() {
-      this.innerWidth = window.innerWidth
-      // console.log(this.innerWidth);
-    },
-    scrollTo(sectionId /* to, , from, savedPosition */ ) {
+    scrollTo(sectionId) {
       return new Promise((resolve, reject) => {
         setTimeout(() => {
-          // if (sectionId.hash === sectionId) {
             VueScrollTo.scrollTo(`#${sectionId}`, 300, { easing: 'linear' })
-          // }
         }, 10)
       })
     },
     async bookingRequest() {
-      console.log('button is online')
       await VueScrollTo.scrollTo('#contact')
       document.querySelector('#name').focus()
     }
   },
-  // computed: {
-  //    setInnerWidth() {
-  //     this.innerWidth = window.innerWidth;
-  //   },
-  // },
-  // data() {
-  //   return {
-  //     innerWidth: window.innerWidth,
-  //   },
-  // },
-  // computed: {
-  //   consoleInnerWidth() {
-  //     let result = window.addEventListener(()=> {
-
-  //     }),
-  //     this.innerWidth =
-  //     console.log()
-  //   },
-  // },
-  // mounted() {
-  //   this.window.addEventListener("onresize", () => {
-  //     console.log(this.window.innerWidth);
-  //   });
-  //   console.log("poop");
-  // },
 }
 </script>
 

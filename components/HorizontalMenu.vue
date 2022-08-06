@@ -19,7 +19,6 @@ export default {
 </script>
 
 <style scoped>
-/*@media (min-width: 1100px) {*/
 ul {
   position: relative;
   flex-direction: row;

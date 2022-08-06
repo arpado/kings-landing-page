@@ -50,7 +50,7 @@ img {
   width: 5px; /* Remove scrollbar space */
   background: transparent; /* Optional: just make scrollbar invisible */
 }
-/* Optional: show position indicator in red */
+/* Optional: show position indicator in white */
 ::-webkit-scrollbar-thumb {
   background: var(--main-white);
 }

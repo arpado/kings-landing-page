@@ -1,7 +1,5 @@
 <template>
   <div class="about-us">
-    <!--<div class="grid-box">-->
-    <!--<div class="float-box">-->
     <div class="flex-box">
       <div class="section-1">
         <div id="pic-1" class="illustration-pic">
@@ -61,7 +59,6 @@ export default {}
 <style scoped>
 .about-us {
   width: 100%;
-  /*height: 100vh;*/
   height: fit-content;
   position: relative;
   background: linear-gradient(
@@ -71,24 +68,6 @@ export default {}
     ),
     linear-gradient(180deg, var(--main-black) 90%, var(--main-brown) 90%);
 }
-/*.grid-box {
-  position: absolute;
-  top: -10vh;
-  width: 100%;
-  height: 120%;
-  display: grid;
-  grid-template-rows: repeat(12, 1fr);
-  grid-template-columns: repeat(12, 1fr);
-}
-.float-box {
-  position: absolute;
-  top: -3rem;
-  width: 100%;
-  height: fit-content;
-}*/
-/*
-linear-gradient(180deg, var(--main-brown) 10%, rgba(0, 0, 0, 0) 10%), linear-gradient(180deg, var(--main-black) 90%, var(--main-brown) 90%)
- */
 .flex-box {
   width: 100%;
   height: fit-content;
@@ -109,64 +88,26 @@ img {
   aspect-ratio: 2;
   box-shadow: 5px 5px 5px 0 black;
   margin: 20px;
-  /*height: 30vw;
-  max-width: 800px;
-  max-height: 400px;
-  min-width: 400px;
-  min-height: 200px;*/
 }
 #pic-1 {
-  /* top: -10vh;
-  right: calc(40% + 100px);
-  width: 80vw;
-  height: 50vw;
-  max-width: 800px;
-  max-height: 500px;
-  min-width: 400px;
-  min-height: 250px;
-  grid-row: 1/5;
-  grid-column: 2/7;*/
   transform: rotate(-2deg);
   float: left;
 }
 #pic-2 {
-  /*top: 35vh;
-  left: 50vw;
-  grid-row: 4/9;
-  grid-column: 7/13;*/
   transform: rotate(-5deg);
   float: right;
 }
 #pic-3 {
-  /*top: 75vh;
-  right: 40%;
-  min-width: 1000px;
-  grid-row: 9/13;
-  grid-column: 1/7;*/
   transform: rotate(7deg);
   float: left;
 }
 h2 {
   color: var(--main-white);
   margin-top: 4vw;
-  /*grid-row: 2/3;
-  grid-column: 9/11;*/
 }
 .text {
   color: var(--main-white);
   padding: 5%;
   text-align: left;
-}
-#text-1 {
-  /*grid-row: 3/4;
-  grid-column: 7/13;*/
-}
-#text-2 {
-  /*grid-row: 5/9;
-  grid-column: 1/7;*/
-}
-#text-3 {
-  /*grid-row: 9/13;
-  grid-column: 7/13;*/
 }
 </style>
