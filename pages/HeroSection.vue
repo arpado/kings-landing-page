@@ -4,7 +4,7 @@
       <h1>Visit the City Where Kings Land!</h1>
       <h2>Unbealivable Offers All Year Until Winter Comes!</h2>
     </div>
-    <button class="call-to-action">BOOK NOW!</button>
+    <button class="call-to-action" @click="$emit('booking-request')">BOOK NOW!</button>
   </div>
 </template>
 

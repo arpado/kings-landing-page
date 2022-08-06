@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <HeaderElement :inner-width="innerWidth" @scroll-request="scrollTo"/>
-    <HeroSection id="hero-section" />
+    <HeroSection id="hero-section" @booking-request="bookingRequest"/>
     <TestimonialSection id="testimonials" />
     <AboutUs  id="about-us" />
     <PointsOfInterest  id="points-of-interest"/>
@@ -60,6 +60,11 @@ export default {
         }, 10)
       })
     },
+    async bookingRequest() {
+      // console.log('poop')
+      await VueScrollTo.scrollTo('#contact')
+      document.querySelector('#name').focus()
+    }
   },
   // computed: {
   //    setInnerWidth() {
