@@ -61,7 +61,7 @@ export default {
       })
     },
     async bookingRequest() {
-      // console.log('poop')
+      console.log('button is online')
       await VueScrollTo.scrollTo('#contact')
       document.querySelector('#name').focus()
     }
